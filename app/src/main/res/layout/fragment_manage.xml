@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhiteText"
     android:layout_margin="8dp"
+    android:background="@color/colorWhiteText"
     android:paddingBottom="16dp"
     tools:context="com.example.home.invapplication.ManageFragment">
 
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edit" />
 
     <Button
-        android:id="@+id/change_pass"
+        android:id="@+id/btnChangepass"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
