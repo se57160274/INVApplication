@@ -1,0 +1,179 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@color/colorWhiteText"
+    android:paddingBottom="16dp"
+    tools:context="com.example.home.invapplication.ProfileFragment">
+
+    <TextView
+        android:id="@+id/myProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="ข้อมูลส่วนตัว"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="24dp"
+        android:text="ชื่อ-สกุล"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/myProfile"
+        app:layout_constraintTop_toBottomOf="@+id/myProfile" />
+
+    <EditText
+        android:id="@+id/fullNameText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/fullName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullName" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="16dp"
+        android:text="ที่อยู่"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/myProfile"
+        app:layout_constraintTop_toBottomOf="@+id/fullNameText" />
+
+    <EditText
+        android:id="@+id/addressText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/address"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <TextView
+        android:id="@+id/tell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="16dp"
+        android:text="เบอร์บ้าน"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/myProfile"
+        app:layout_constraintTop_toBottomOf="@+id/addressText" />
+
+    <EditText
+        android:id="@+id/tellText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/tell"
+        app:layout_constraintRight_toLeftOf="@+id/tellPhoneText"
+        app:layout_constraintTop_toBottomOf="@+id/tell" />
+
+    <TextView
+        android:id="@+id/tellPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="เบอร์มือถือ"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/tell"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressText" />
+
+    <EditText
+        android:id="@+id/tellPhoneText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/tellPhone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tellPhone" />
+
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="16dp"
+        android:text="E-mail"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/myProfile"
+        app:layout_constraintTop_toBottomOf="@+id/tellText" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/email"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="16dp"
+        android:text="ตำแหน่งงาน"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/myProfile"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+    <EditText
+        android:id="@+id/rankText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/rank"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rank" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="29dp"
+        android:background="#FFDD00"
+        android:text="แก้ไข"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rankText" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="30dp"
+        android:text="ยกเลิก"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rankText" />
+
+</android.support.constraint.ConstraintLayout>
