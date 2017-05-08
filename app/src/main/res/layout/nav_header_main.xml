@@ -31,7 +31,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/top_10dp"
             android:layout_marginLeft="@dimen/left_10dp"
-            android:text="Team 11"
+            android:text="Team 11 eeeee"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
     </LinearLayout>
 
