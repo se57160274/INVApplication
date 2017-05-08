@@ -15,4 +15,7 @@ public interface OPPMSService {
     @POST("application/views/inventory/borrow/Andriod_SMEs/SMEs_chkLogin.php") // ส่งข้อมูล
     Call<SendQuick> getOPPMSData(@Field("email") String email,
                                  @Field("password") String password);
+
+    @POST("application/views/inventory/borrow/Andriod_SMEs/SMES_select_borrow_return.php")
+    Call<OPPMSDAO> getData(); //รับข้อมูล
 }

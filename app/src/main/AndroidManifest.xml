@@ -2,11 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.home.invapplication">
 
-
-
     <uses-permission android:name="android.permission.INTERNET" />
-
-
 
     <application
         android:allowBackup="true"
@@ -36,7 +32,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainBorrow" />
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainBorrowReturn"></activity>
     </application>
 
 </manifest>

@@ -28,7 +28,26 @@ public class MainLogin extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         service = retrofit.create(OPPMSService.class);
+        ChangePage();
+        Login();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+    public void Login(){
         final EditText etemail = (EditText)findViewById(R.id.etUsername);
         final EditText etpasswords = (EditText)findViewById(R.id.etPassword);
         final Button btnLogin = (Button)findViewById(R.id.btnLogin);
@@ -38,55 +57,41 @@ public class MainLogin extends AppCompatActivity {
             public void onClick(View v) {
                 String email = etemail.getText().toString();
                 String password = etpasswords.getText().toString();
-              service.getOPPMSData(email,password).enqueue(new Callback<SendQuick>() {
-                  @Override
-                  public void onResponse(Call<SendQuick> call, Response<SendQuick> response) {
-                      Log.d("RESPONSE :: ",response.body().result);
-                      CharSequence text = response.body().result;
-                      final int  chk = Integer.parseInt(text.toString());
+                service.getOPPMSData(email,password).enqueue(new Callback<SendQuick>() {
+                    @Override
+                    public void onResponse(Call<SendQuick> call, Response<SendQuick> response)
+                    {
+                        Log.d("RESPONSE :: ",response.body().result);
+                        CharSequence text = response.body().result;
+                        final int  chk = Integer.parseInt(text.toString());
 
-                      if(chk==1){
-                          Toast toast = Toast.makeText(getApplicationContext(),"LOGIN SUCCESS",Toast.LENGTH_SHORT);
-                          toast.show();
+                        if(chk==1){
+                            Toast toast = Toast.makeText(getApplicationContext(),"LOGIN SUCCESS",Toast.LENGTH_SHORT);
+                            toast.show();
 
-                          Intent intent = new Intent(MainLogin.this,MainActivity.class);
-                          MainLogin.this.startActivity(intent);
+                            Intent intent = new Intent(MainLogin.this,MainActivity.class);
+                            MainLogin.this.startActivity(intent);
+                        }
+                        else{
+                            AlertDialog.Builder builder = new AlertDialog.Builder(MainLogin.this);
+                            builder.setMessage("LOGIN FAIL")
+                                    .setNegativeButton("Retry",null)
+                                    .create()
+                                    .show();
+                        }
+                    }
 
+                    @Override
+                    public void onFailure(Call<SendQuick> call, Throwable t) {
 
-
-                      }
-                      else{
-                          AlertDialog.Builder builder = new AlertDialog.Builder(MainLogin.this);
-                          builder.setMessage("LOGIN FAIL")
-                                  .setNegativeButton("Retry",null)
-                                  .create()
-                                  .show();
-
-                      }
-                  }
-
-                  @Override
-                  public void onFailure(Call<SendQuick> call, Throwable t) {
-
-                  }
-              });
+                    }
+                });
             }
         });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* เปลี่ยนหน้าไปเป็น หน้าสมัครสมาชิก*/
+    }
+    public void ChangePage(){
+          /* เปลี่ยนหน้าไปเป็น หน้าสมัครสมาชิก*/
         Button btnRegister = (Button)findViewById(R.id.btnRegister);
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,6 +100,5 @@ public class MainLogin extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }

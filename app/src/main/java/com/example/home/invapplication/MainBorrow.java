@@ -15,17 +15,9 @@ private ImageView Borrow;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_borrow);
 
-        Borrow = (ImageView) findViewById(R.id.borrow);
-        Borrow.setOnClickListener(OnClickSubmittListener);
 
 
     }
 
-    private View.OnClickListener OnClickSubmittListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent in = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(in);
-        }
-    };
+
 }
