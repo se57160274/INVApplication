@@ -14,6 +14,7 @@ import android.widget.ImageView;
  */
 public class MainFragment extends Fragment {
 
+    private ImageView Borrow;
 
 
 
@@ -26,37 +27,19 @@ public class MainFragment extends Fragment {
 
 
 
+
+
+
+
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_main, container, false);
-        ImageView borrow = (ImageView)v.findViewById(R.id.borrow);
-        borrow.setOnClickListener(new View.OnClickListener() {
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                Bundle savedInstanceState) {
+             //Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_main, container, false);
+       }
 
-
-
-
-            @Override
-            public void onClick(View v) {
-                ProfileFragment fragment = new ProfileFragment();
-                android.support.v4.app.FragmentTransaction fragmentTransaction =
-                     getFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_borrow, fragment);fragmentTransaction.commit();
-            }
-
-
-        });
-
-
-       // View v = inflater.inflate(R.layout.fragment_main, container, false);
-
-        return v;
     }
 
 
 
-
-
-
-}

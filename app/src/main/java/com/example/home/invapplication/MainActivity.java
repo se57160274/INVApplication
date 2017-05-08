@@ -16,7 +16,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-     //ImageView Borrow;
+
 
     //Set ตัวแปร
     NavigationView navigationView = null;
@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
 /*
         Borrow = (ImageView) findViewById(R.id.borrow);
         Borrow.setOnClickListener(new View.OnClickListener() {
@@ -130,11 +132,5 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    //private View.OnClickListener OnClickSubmitListener = new View.OnClickListener() {
-     //   @Override
-     //   public void onClick(View v) {
-       //     Intent in = new Intent(getApplicationContext(), MainBorrow.class);
-       //     startActivity(in);
-      //  }
-   // };
+
 }
