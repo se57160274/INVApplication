@@ -1,11 +1,9 @@
 package com.example.home.invapplication;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -13,9 +11,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+     //ImageView Borrow;
 
     //Set ตัวแปร
     NavigationView navigationView = null;
@@ -35,6 +36,15 @@ public class MainActivity extends AppCompatActivity
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+/*
+        Borrow = (ImageView) findViewById(R.id.borrow);
+        Borrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getApplicationContext(),"LOGIN SUCCESS",Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        }); */
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -119,4 +129,12 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    //private View.OnClickListener OnClickSubmitListener = new View.OnClickListener() {
+     //   @Override
+     //   public void onClick(View v) {
+       //     Intent in = new Intent(getApplicationContext(), MainBorrow.class);
+       //     startActivity(in);
+      //  }
+   // };
 }
