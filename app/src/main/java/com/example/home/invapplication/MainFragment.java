@@ -35,13 +35,14 @@ public class MainFragment extends Fragment {
         borrow.setOnClickListener(new View.OnClickListener() {
 
 
+
+
             @Override
             public void onClick(View v) {
                 ProfileFragment fragment = new ProfileFragment();
                 android.support.v4.app.FragmentTransaction fragmentTransaction =
-                        getFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_borrow, fragment);
-                fragmentTransaction.commit();
+                     getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_borrow, fragment);fragmentTransaction.commit();
             }
 
 
