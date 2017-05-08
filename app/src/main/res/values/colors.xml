@@ -11,6 +11,6 @@
     <color name="bgColorContent_menu_logo">#A8A2A2</color>
 
     <color name="colorHeadGroupText">#D8D8D8</color>
-    <color name="bgColorHeadGroup">#675D5D</color>
+    <color name="bgColorHeadGroup">#675d5d</color>
     <color name="bgColorGroup">#8D8383</color>
 </resources>
