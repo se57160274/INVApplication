@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -136,3 +137,141 @@
 
 
 </LinearLayout>
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.home.invapplication.MainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColorContent_menu_logo"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:paddingLeft="20sp"
+            android:src="@drawable/sme_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/size_5dp"
+            android:text="@string/app_name_th"
+            android:textColor="@color/colorWhiteText"
+            android:textSize="@dimen/text_head1"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/HeadGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="รายการสินค้า" />
+
+    <LinearLayout style="@style/group_menu">
+
+        <LinearLayout style="@style/lay_btn_menu">
+
+            <ImageView
+                android:layout_width="@dimen/content_menu_icon_size"
+                android:layout_height="@dimen/content_menu_icon_size"
+                android:src="@drawable/list_flat" />
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_5sp"
+                android:gravity="center"
+                android:text="รายการสินค้า"
+                android:textColor="@color/colorWhiteText"
+                android:textSize="@dimen/text_head3" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/lay_btn_menu">
+
+            <ImageView
+                android:layout_width="@dimen/content_menu_icon_size"
+                android:layout_height="@dimen/content_menu_icon_size"
+                android:src="@drawable/map_icon" />
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_5sp"
+                android:gravity="center"
+                android:text="ที่อยู่ผู้ยืม"
+                android:textColor="@color/colorWhiteText"
+                android:textSize="@dimen/text_head3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/HeadGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="จัดการสินค้า" />
+
+    <LinearLayout style="@style/group_menu">
+
+        <LinearLayout style="@style/lay_btn_menu">
+
+            <ImageView
+                android:layout_width="@dimen/content_menu_icon_size"
+                android:layout_height="@dimen/content_menu_icon_size"
+                android:src="@drawable/scholarship" />
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_5sp"
+                android:gravity="center"
+                android:text="ยืมสินค้า"
+                android:textColor="@color/colorWhiteText"
+                android:textSize="@dimen/text_head3" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/lay_btn_menu">
+
+            <ImageView
+                android:layout_width="@dimen/content_menu_icon_size"
+                android:layout_height="@dimen/content_menu_icon_size"
+                android:src="@drawable/masseuse_return_policy_icon" />
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_5sp"
+                android:gravity="center"
+                android:text="คืนสินค้า"
+                android:textColor="@color/colorWhiteText"
+                android:textSize="@dimen/text_head3" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/lay_btn_menu">
+
+            <ImageView
+                android:layout_width="@dimen/content_menu_icon_size"
+                android:layout_height="@dimen/content_menu_icon_size"
+                android:src="@drawable/fragile" />
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_5sp"
+                android:gravity="center"
+                android:text="แจ้งสินค้าเสียหาย"
+                android:textColor="@color/colorWhiteText"
+                android:textSize="@dimen/text_head3" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
+>>>>>>> Stashed changes
