@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
     android:background="#C13838"
@@ -20,18 +18,18 @@
 
         <ImageView
             android:layout_width="80dp"
-            android:layout_marginTop="@dimen/top_10dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginTop="@dimen/top_10dp"
             android:src="@drawable/user" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/top_10dp"
             android:layout_marginLeft="@dimen/left_10dp"
-            android:text="Team 11"
+            android:layout_marginTop="@dimen/top_10dp"
+            android:text="Team 11 rrrrr"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
     </LinearLayout>
 
